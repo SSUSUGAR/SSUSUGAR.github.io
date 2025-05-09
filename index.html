@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment HTML Primer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhezhe Qian - Artist Portfolio</title>
+  <!-- Add p5.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <!-- Add p5.js noise library for Sprout Brake -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.noise.min.js"></script>
+  <!-- Add Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts for Playfair Display and Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <!-- Navigation Bar -->
+  <nav class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-6">
+      <a href="#bio" class="text-lg font-medium" aria-label="Go to Artist Bio">Bio</a>
+      <a href="#glitch" class="text-lg font-medium" aria-label="Go to Digital Glitch Artwork">Glitch Art</a>
+      <a href="#robot" class="text-lg font-medium" aria-label="Go to Robot Coding Artwork">Robot</a>
+      <a href="#rocket" class="text-lg font-medium" aria-label="Go to Rocket Animation Artwork">Rocket</a>
+      <a href="#crystal" class="text-lg font-medium" aria-label="Go to Synonymous Crystal Artwork">Crystal</a>
+      <a href="#sprout" class="text-lg font-medium" aria-label="Go to Sprout Brake Artwork">Sprout</a>
+      <a href="#sticker" class="text-lg font-medium" aria-label="Go to Sticker Project">Sticker</a>
+      <a href="#gif" class="text-lg font-medium" aria-label="Go to GIF Evolution Project">GIF</a>
+      <a href="#contact" class="text-lg font-medium" aria-label="Go to Contact Information">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Zhezhe Qian</h1>
+      <p class="text-lg md:text-xl">Photographer | Digital Artist | Creative Coder</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12">
+    <!-- Artist Bio -->
+    <section id="bio" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Artist Bio</h2>
+      <p class="text-lg leading-relaxed">
+        Zhezhe’s photography seamlessly blends technical precision with emotional depth, incorporating personal sentiment and poetic storytelling into his images. Working in both color and black-and-white digital formats, he creates evocative series that guide viewers through a narrative arc. Rather than directly depicting themes like homelessness, he captures the atmosphere and emotion of his surroundings to tell compelling stories.
+      </p>
+      <p class="text-lg leading-relaxed mt-4">
+        His recent series, <em>Depression</em>, was featured in a group exhibition at the Jo Farb Hernandez Gallery at SJSU, highlighting the living conditions of marginalized communities in urban environments. Through his lens, Zhezhe encourages audiences to reflect on both the beauty and challenges of the human experience.
+      </p>
+    </section>
+
+    <!-- Digital Glitch Artwork -->
+    <section id="glitch" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Digital Glitch: Fragmented Realities</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> February 10, 2025 | <strong>Dimensions:</strong> 7 x 5 inches
+      </p>
+      <p class="text-lg leading-relaxed">
+        This piece is a digital exploration of distortion, identity, and transformation through the medium of glitch art. Drawing from a collection of multiple online images, I recontextualized each by directly altering their underlying code using text editing techniques. These intentional corruptions disrupt the digital structure, producing unexpected patterns, vibrant artifacts, and surreal textures that challenge conventional perceptions of digital imagery.
+      </p>
+      <!-- Image Gallery -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/942eaf0e-5637-ebe6-2ccb-6831df75e64d.jpg" alt="Glitch Art 1" class="w-full h-auto rounded-lg shadow-md" aria-label="Glitch Art Image 1">
+        <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/4b95b7ec-3c95-5eca-efda-05670e2ab8d1.jpg" alt="Glitch Art 2" class="w-full h-auto rounded-lg shadow-md" aria-label="Glitch Art Image 2">
+        <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/5e8a1098-2fa7-c2d6-bc43-9752894d599e.jpeg" alt="Glitch Art 3" class="w-full h-auto rounded-lg shadow-md" aria-label="Glitch Art Image 3">
+        <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/710a52ab-f0ca-c239-c62e-da40a44d0920.jpg" alt="Glitch Art 4" class="w-full h-auto rounded-lg shadow-md" aria-label="Glitch Art Image 4">
+      </div>
+    </section>
+
+    <!-- Robot Coding Artwork -->
+    <section id="robot" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Robot Coding: Fragmented Realities</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> April 07, 2025 | <strong>Dimensions:</strong> 800 x 800 pixels
+      </p>
+      <p class="text-lg leading-relaxed">
+        This piece is a robot animation created using JavaScript and p5.js. The design of the robot is inspired by the character WALL-E, incorporating similar shapes and expressive features. Through code-driven motion and interactive elements, the animation brings the robot to life, blending technology with creative design.
+      </p>
+      <!-- Replay Button with Description -->
+      <div class="flex justify-center mt-6">
+        <div class="text-center">
+          <button id="robotReplayButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" aria-label="Replay Robot Animation">Replay Robot Animation</button>
+          <p class="text-sm text-gray-600 mt-2">Click the button to restart the robot animation.</p>
+        </div>
+      </div>
+      <!-- Robot Canvas Container -->
+      <div id="robotCanvasContainer" class="mt-6 flex justify-center"></div>
+    </section>
+
+    <!-- Rocket Animation Artwork -->
+    <section id="rocket" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Rocket Animation: Journey to the Stars</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> March 12, 2025 | <strong>Dimensions:</strong> 800 x 800 pixels
+      </p>
+      <p class="text-lg leading-relaxed">
+        This piece is a rocket animation created using JavaScript and p5.js. The design depicts a golden rocket with secondary boosters, set against a starry space background with Earth in view. The animation captures the essence of space exploration, blending vibrant colors and dynamic shapes to evoke a sense of adventure and wonder.
+      </p>
+      <!-- Replay Button with Description -->
+      <div class="flex justify-center mt-6">
+        <div class="text-center">
+          <button id="rocketReplayButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" aria-label="Replay Rocket Animation">Replay Rocket Animation</button>
+          <p class="text-sm text-gray-600 mt-2">Click the button to restart the rocket animation.</p>
+        </div>
+      </div>
+      <!-- Rocket Canvas Container -->
+      <div id="rocketCanvasContainer" class="mt-6 flex justify-center"></div>
+    </section>
+
+    <!-- Synonymous Crystal Artwork -->
+    <section id="crystal" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Synonymous Crystal</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> March 10, 2025 | <strong>Dimensions:</strong> 800 x 800 pixels
+      </p>
+      <p class="text-lg leading-relaxed">
+        This piece is a generative animation created using JavaScript and p5.js. Inspired by the fractal patterns of Romanesco broccoli, it employs the golden ratio and recursive geometry to create a mesmerizing, crystalline structure. The animation evolves with subtle rotations and oscillations, evoking a sense of organic growth and mathematical beauty.
+      </p>
+      <!-- Replay Button with Description -->
+      <div class="flex justify-center mt-6">
+        <div class="text-center">
+          <button id="crystalReplayButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" aria-label="Replay Crystal Animation">Replay Crystal Animation</button>
+          <p class="text-sm text-gray-600 mt-2">Click the button to restart the crystal animation.</p>
+        </div>
+      </div>
+      <!-- Crystal Canvas Container -->
+      <div id="crystalCanvasContainer" class="mt-6 flex justify-center"></div>
+    </section>
+
+    <!-- Sprout Brake Artwork -->
+    <section id="sprout" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Sprout Brake</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> March 25, 2025 | <strong>Dimensions:</strong> 800 x 800 pixels
+      </p>
+      <p class="text-lg leading-relaxed">
+        This piece is a dynamic animation created using JavaScript and p5.js, blending aerodynamic particle systems with musical note visualizations. The artwork features intricate mathematical patterns, fractal spirals, and pulsating notes that respond to simulated wind and lift forces. It represents a fusion of natural motion, sound, and visual art.
+      </p>
+      <!-- Replay Button with Description -->
+      <div class="flex justify-center mt-6">
+        <div class="text-center">
+          <button id="sproutReplayButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" aria-label="Replay Sprout Animation">Replay Sprout Animation</button>
+          <p class="text-sm text-gray-600 mt-2">Click the button to restart the sprout animation.</p>
+        </div>
+      </div>
+      <!-- Sprout Canvas Container -->
+      <div id="sproutCanvasContainer" class="mt-6 flex justify-center"></div>
+    </section>
+
+    <!-- Sticker Project -->
+    <section id="sticker" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Sticker Project: Nail Clippers</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> May 2025 | <strong>Medium:</strong> Vector Drawing
+      </p>
+      <p class="text-lg leading-relaxed">
+        This project features a vector drawing of nail clippers, designed as a sticker. The artwork emphasizes clean lines and bold shapes, transforming an everyday object into a visually striking piece of art. The design process involved digital illustration techniques to create a scalable, high-quality graphic suitable for print and digital use. The real-life application showcases the sticker in a physical context.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <div class="text-center">
+          <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/b02144c5-02c6-93d3-47c2-7ef9cce97224.png" alt="Nail Clippers Vector Sticker" class="w-full max-w-md mx-auto h-auto rounded-lg shadow-md" aria-label="Nail Clippers Vector Sticker Image">
+          <p class="text-sm text-gray-600 mt-2">Vector Drawing</p>
+        </div>
+        <div class="text-center">
+          <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/9b3e7501-6b5f-2078-cba5-28ea94e046b7.jpg" alt="Nail Clippers Real-Life Sticker" class="w-full max-w-md mx-auto h-auto rounded-lg shadow-md" aria-label="Nail Clippers Real-Life Sticker Image">
+          <p class="text-sm text-gray-600 mt-2">Real-Life Application</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIF Evolution Project -->
+    <section id="gif" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Evolution of GIFs: A Digital Journey</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        <strong>Completed:</strong> May 2025 | <strong>Medium:</strong> Digital Research and Animation
+      </p>
+      <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/dbac6a82-8e13-23bb-b4fe-55780bd10960.jpeg" alt="GIF Evolution Banner" class="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-md mb-6" aria-label="GIF Evolution Banner Image">
+      <div class="text-block">
+        <p class="text-lg leading-relaxed">
+          In June 1987, CompuServe introduced the Graphics Interchange Format (GIF), spearheaded by American computer scientist Steve Wilhite. Developed to facilitate efficient image sharing over slow dial-up connections, GIFs utilized the Lempel-Ziv-Welch (LZW) lossless compression algorithm to maintain image quality in a compact file size. Supporting up to 256 colors (8-bit), GIFs were ideal for logos, icons, and simple graphics, making visual content practical for the nascent internet and laying the groundwork for a transformative digital era.
+        </p>
+        <p class="text-lg leading-relaxed mt-4 accent-para">
+          GIFs distinguished themselves with their animation capabilities, allowing multiple frames to be stored in a single file. This enabled short, looping sequences that captivated early internet users and foreshadowed GIFs’ role as a creative medium. From rudimentary web animations in the 1990s to expressive tools on modern platforms, GIFs have continually shaped visual communication online, offering a unique blend of simplicity and dynamism.
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          The 1990s brought challenges when Unisys, holding a patent on the LZW compression algorithm, enforced licensing fees for GIF usage. This sparked controversy, particularly among developers, and prompted the creation of the patent-free Portable Network Graphics (PNG) format in 1996 as an alternative. Despite this, GIFs retained their popularity due to their animation support and widespread adoption. The LZW patent expired in 2004, removing barriers and cementing GIFs as a universal standard.
+        </p>
+        <p class="text-lg leading-relaxed mt-4 accent-para">
+          The 2010s marked a GIF renaissance, driven by the rise of social media platforms like Tumblr, Twitter, and later Instagram. Services like GIPHY and Tenor revolutionized GIF accessibility, offering vast libraries for users to express emotions, humor, and reactions in concise, looping clips. GIFs transcended language barriers, becoming a global visual language that enriched digital conversations and connected diverse cultures through shared storytelling.
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          Today, GIFs are a cultural cornerstone, integral to memes, digital marketing, and even artistic expression. Their technical limitations—such as the 256-color palette—add to their nostalgic charm, while their versatility ensures relevance in modern contexts. GIFs have also found new life in professional settings, with brands leveraging them for engaging advertisements and social media campaigns. Despite competition from advanced formats like WebP and short-form video, GIFs endure as a beloved relic of the internet’s early days, evolving with technology while retaining their distinctive identity.
+        </p>
+      </div>
+      <div id="key-insights" class="mt-6">
+        <h3 class="text-xl font-semibold mb-4">Key Insights</h3>
+        <ul class="list-disc list-inside text-lg leading-relaxed">
+          <li>GIFs, introduced in 1987 by Steve Wilhite at CompuServe, enabled image sharing on slow networks using LZW compression.</li>
+          <li>Support for animations made GIFs a dynamic tool for early web visuals and modern digital expression.</li>
+          <li>A 1990s patent dispute with Unisys led to the creation of PNG, but GIFs remained dominant due to their animation capabilities.</li>
+          <li>The 2010s social media boom, fueled by platforms like Tumblr and services like GIPHY, transformed GIFs into a universal communication medium.</li>
+          <li>GIFs remain culturally significant, used in memes, marketing, and art, balancing nostalgia with modern adaptability.</li>
+        </ul>
+      </div>
+      <div class="advantages-disadvantages mt-6">
+        <h3 class="text-xl font-semibold mb-4">Advantages and Disadvantages of GIFs</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="text-lg font-semibold">Advantages</h4>
+            <ul class="list-disc list-inside text-lg leading-relaxed">
+              <li><strong>Animation Support:</strong> GIFs can display multiple frames, enabling short, looping animations that are ideal for capturing attention and conveying dynamic content.</li>
+              <li><strong>Small File Size:</strong> Using LZW compression, GIFs maintain reasonable quality with compact file sizes, making them efficient for web use, especially on slow connections.</li>
+              <li><strong>Universal Compatibility:</strong> GIFs are supported across all major browsers and platforms, ensuring consistent display without additional plugins.</li>
+              <li><strong>Transparency:</strong> GIFs support transparent backgrounds, allowing seamless integration into various website designs.</li>
+              <li><strong>Nostalgic Appeal:</strong> The retro aesthetic of GIFs, with their limited color palette, adds a unique charm that resonates with users.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold">Disadvantages</h4>
+            <ul class="list-disc list-inside text-lg leading-relaxed">
+              <li><strong>Limited Color Palette:</strong> Restricted to 256 colors, GIFs struggle with complex images or photographs, often resulting in lower visual quality compared to formats like PNG or JPEG.</li>
+              <li><strong>Larger File Size for Complex Animations:</strong> Compared to modern video formats like MP4 or WebM, GIFs can have larger file sizes for longer or more detailed animations, impacting load times.</li>
+              <li><strong>No Audio Support:</strong> GIFs cannot include sound, limiting their use for multimedia content that requires audio cues.</li>
+              <li><strong>Outdated Compression:</strong> The LZW compression is less efficient than newer algorithms used in formats like WebP, which offer better quality and smaller file sizes.</li>
+              <li><strong>Accessibility Issues:</strong> Fast-moving or flashing GIFs can pose challenges for users with visual sensitivities or epilepsy, requiring careful implementation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="popularity mt-6">
+        <h3 class="text-xl font-semibold mb-4">Why Are GIFs So Popular?</h3>
+        <p class="text-lg leading-relaxed">
+          GIFs have become a cultural phenomenon due to their unique blend of accessibility, expressiveness, and versatility. Their popularity stems from several key factors:
+        </p>
+        <ul class="list-disc list-inside text-lg leading-relaxed">
+          <li><strong>Emotional Expressiveness:</strong> GIFs convey emotions, reactions, and humor in a concise, visual format, making them perfect for social media and messaging platforms where brevity is valued.</li>
+          <li><strong>Ease of Use:</strong> Platforms like GIPHY and Tenor provide searchable libraries, allowing users to quickly find and share GIFs without technical expertise.</li>
+          <li><strong>Cross-Cultural Appeal:</strong> As a visual medium, GIFs transcend language barriers, enabling global communication through universally understood imagery.</li>
+          <li><strong>Meme Culture:</strong> GIFs are a cornerstone of internet memes, offering a shareable, repeatable format that fuels viral trends and online communities.</li>
+          <li><strong>Marketing Versatility:</strong> Brands use GIFs in digital campaigns to create engaging, eye-catching content that stands out in crowded social media feeds.</li>
+          <li><strong>Retro Charm:</strong> The nostalgic, low-fi aesthetic of GIFs resonates with users, evoking the early internet while remaining relevant in modern contexts.</li>
+        </ul>
+        <p class="text-lg leading-relaxed mt-4">
+          Despite competition from advanced formats, GIFs remain popular because they strike a balance between simplicity and impact, making them an enduring tool for communication, creativity, and connection in the digital age.
+        </p>
+      </div>
+      <div class="gif-showcase mt-6">
+        <h3 class="text-xl font-semibold mb-4">GIF Showcase</h3>
+        <h4 class="text-lg font-semibold">Found Online</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+          <div class="gif-card text-center">
+            <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/56e359a1-2330-b6d6-eb8d-cdcfe91a34aa.gif?v=1" alt="Early GIF Animation Example" class="w-full h-auto rounded-lg shadow-md">
+            <p class="text-sm text-gray-600 mt-2">Tom & Jerry</p>
+          </div>
+          <div class="gif-card text-center">
+            <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/d05c2b0d-713f-6a0c-c13a-022a082f8d85.gif?v=1" alt="Modern Social Media GIF" class="w-full h-auto rounded-lg shadow-md">
+            <p class="text-sm text-gray-600 mt-2">Bird</p>
+          </div>
+          <div class="gif-card text-center">
+            <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/35fab65d-9eeb-bdeb-597d-5842360cae7e.gif?v=1" alt="Featured Animation GIF" class="w-full h-auto rounded-lg shadow-md">
+            <p class="text-sm text-gray-600 mt-2">Shark</p>
+          </div>
+        </div>
+        <hr class="section-divider">
+        <h4 class="text-lg font-semibold mt-6">Original Creations</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="gif-card text-center">
+            <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/514e0b17-c715-c503-bf72-9da374a5ceb9.gif?v=1" alt="Self-Made GIF 1: Ocean Waves" class="w-full h-auto rounded-lg shadow-md">
+            <p class="text-sm text-gray-600 mt-2">Custom GIF 1: Ocean Waves</p>
+            <p class="text-sm text-gray-600 mt-2 gif-description">A mesmerizing animation capturing the rhythmic ebb and flow of ocean waves, evoking a sense of calm and natural beauty.</p>
+          </div>
+          <div class="gif-card text-center">
+            <img src="https://mcusercontent.com/1b8fbb6d9d56d8c7205478e95/images/a029f223-be22-5c93-0ed0-746822ade371.gif?v=1" alt="Self-Made GIF 2: Star Fall" class="w-full h-auto rounded-lg shadow-md">
+            <p class="text-sm text-gray-600 mt-2">Custom GIF 2: Star Fall</p>
+            <p class="text-sm text-gray-600 mt-2 gif-description">A celestial display of falling stars streaking across a night sky, creating a dreamy and magical atmosphere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
+      <p class="text-lg leading-relaxed">
+        Feel free to reach out to me for collaborations, inquiries, or to discuss my work. You can connect with me through the following channels:
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed mt-4">
+        <li><strong>Email:</strong> <a href="mailto:zhezhe.qian@sjsu.edu" class="underline hover:text-blue-600" aria-label="Email Zhezhe Qian">zhezhe.qian@sjsu.edu</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/zhezheqian/" target="_blank" class="underline hover:text-blue-600" aria-label="Visit Zhezhe Qian's Instagram">instagram.com/zhezheqian</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg">Connect with me on <a href="https://www.instagram.com/zhezheqian/" target="_blank" class="underline hover:text-blue-400" aria-label="Visit Zhezhe Qian's Instagram">Instagram</a></p>
+      <p class="mt-2">© 2025 Zhezhe Qian. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

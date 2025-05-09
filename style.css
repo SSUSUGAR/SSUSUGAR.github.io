@@ -1,0 +1,172 @@
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Style canvas containers */
+#robotCanvasContainer, #rocketCanvasContainer, #crystalCanvasContainer, #sproutCanvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom font for headings */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1e3a8a; /* Deep blue for headings */
+}
+
+/* Custom font for body text and paragraphs */
+body, p {
+  font-family: 'Inter', sans-serif;
+  color: #1f2937; /* Dark gray for better readability */
+}
+
+/* Center main content container */
+.container {
+  max-width: 1200px; /* Limit max width for readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add subtle shadow and padding to sections for depth */
+section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for image gallery images */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Footer styling */
+footer {
+  font-family: 'Inter', sans-serif;
+  color: #f3f4f6; /* Light gray for footer text */
+}
+
+/* Ensure replay buttons align with Tailwind styles */
+#robotReplayButton, #rocketReplayButton, #crystalReplayButton, #sproutReplayButton {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Sticky Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background: #1e3a8a;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #93c5fd;
+}
+
+/* GIF Section Styling */
+#gif .text-block {
+  margin-bottom: 1.5rem;
+}
+
+#gif .accent-para {
+  background-color: #e6f3fa;
+  padding: 1rem;
+  border-left: 6px solid #0288d1;
+  font-style: italic;
+  color: #01579b;
+}
+
+#gif #key-insights, #gif .advantages-disadvantages, #gif .popularity {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#gif h3 {
+  color: #1e3a8a;
+}
+
+#gif h4 {
+  color: #1f2937;
+}
+
+#gif .section-divider {
+  height: 2px;
+  border: 0;
+  background: linear-gradient(to right, #0288d1, #4fc3f7, #0288d1);
+  margin: 1rem 0;
+}
+
+#gif .gif-showcase .gif-card img {
+  max-width: 300px;
+  height: auto;
+}
+
+#gif .gif-description {
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  #robotCanvasContainer canvas, #rocketCanvasContainer canvas, #crystalCanvasContainer canvas, #sproutCanvasContainer canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Stack navigation links vertically on small screens */
+  nav .container {
+    flex-direction: column;
+    align-items: center;
+    space-x-6: 0;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  #gif .gif-showcase .gif-card img {
+    max-width: 100%;
+  }
+
+  #gif .gif-description {
+    max-width: 100%;
+  }
+}
